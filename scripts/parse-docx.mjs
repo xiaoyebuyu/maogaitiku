@@ -271,7 +271,7 @@ function extractAnswerFromParentheses(text, typeHint, options) {
   const candidates = [...text.matchAll(/[(（]\s*([^()（）]{1,30})\s*[)）]/g)];
   for (const match of candidates.reverse()) {
     const value = match[1].trim();
-    const looksLikeChoice = /^[A-Fa-f](?:\s*[,，、]\s*[A-Fa-f])*$/.test(value);
+    const looksLikeChoice = /^[A-Fa-f](?:\s*[,，、]?\s*[A-Fa-f])*$/.test(value);
     const looksLikeJudge = /^(√|×|对|错|正确|错误|是|否|T|F|true|false)$/i.test(value);
     if (looksLikeChoice || looksLikeJudge || typeHint === "blank" || Object.keys(options).length > 0) {
       return { answer: value, raw: match[0], remove: looksLikeChoice || looksLikeJudge };
