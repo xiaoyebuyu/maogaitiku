@@ -32,6 +32,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Disable Jekyll
+        run: touch dist/.nojekyll
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
         with:
