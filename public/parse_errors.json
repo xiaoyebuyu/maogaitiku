@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-07-02T12:38:03.551Z",
+  "source": "data/毛概总题库.docx",
+  "mammothMessages": [
+    {
+      "type": "warning",
+      "message": "An unrecognised element was ignored: w:cr"
+    }
+  ],
+  "count": 1,
+  "items": [
+    {
+      "id": "235",
+      "type": "single",
+      "reason": [
+        "缺少答案"
+      ],
+      "raw": "实行( )，也是对当代世界经济、科技发展和国际形势发展敏锐观察的结果。【P170】\nA.对外开放B.对内改革C.对外封闭D.对外支援\nA.和平与发展B.革命与战争 C.改革与开放 D.稳定和发展"
+    }
+  ]
+}
