@@ -77,7 +77,9 @@ export default function App() {
   const [loadError, setLoadError] = useState("");
 
   useEffect(() => {
-    fetch("./questions.json")
+    fetch(`${import.meta.env.BASE_URL}questions.json?v=20260702-remove-multiple-answers`, {
+      cache: "no-store",
+    })
       .then((response) => {
         if (!response.ok) throw new Error("题库文件读取失败");
         return response.json();
